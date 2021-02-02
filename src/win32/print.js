@@ -22,7 +22,7 @@ const print = (pdf, options = {}) => {
     win32.map((win32Arg) => args.push(...win32Arg.split(" ")));
   } else {
     if (printer) {
-      args.push("-print-to", printer);
+      args.push('-print-to "' + printer + '"');
     } else {
       args.push("-print-to-default");
     }
