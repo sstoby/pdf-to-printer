@@ -14,6 +14,7 @@ module.exports = {
     new CleanWebpackPlugin(),
     new CopyPlugin([
       { from: "./src/win32/SumatraPDF.exe" },
+      { from: "./src/win32/ZPLPrinter.exe" },
       { from: "./src/types.d.ts" },
     ]),
   ],
